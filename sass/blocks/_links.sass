@@ -1,0 +1,159 @@
+.links
+  border: 1px solid #D6D9E0
+  box-shadow: 0px 4px 8px 0px #00000014
+  width: 1200px
+  margin: 32px auto
+  border-radius: 16px
+  &-block
+    padding: 32px
+    &__underline
+      height: 1px
+      width: 100%
+      background-color: #EAEAEA
+    &__image
+      padding: 16px 24px 16px 24px
+      border-radius: 8px
+      background-color: #009846
+      display: flex
+      justify-content: center
+      align-items: center
+      width: max-content
+      margin-bottom: 20px
+      cursor: pointer
+      width: 318px
+      span
+        color: #fff
+        font-family: "Inter", sans-serif
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+    &__item
+      padding: 30px 0px 0px 0px
+    &__icon
+      margin-right: 7px
+    &__content
+      display: none
+      &.show
+        display: block
+    &__switch
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      align-items: center
+      margin-bottom: 25px
+      cursor: pointer
+      span
+        font-family: "Inter", sans-serif
+        font-weight: 600
+        font-size: 20px
+        line-height: 26px
+        color: #162136
+    &__time
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      width: max-content
+      padding: 6px 10px 6px 10px
+      background-color: #0098461A
+      border-radius: 18px 
+      margin-bottom: 14px
+      span
+        font-family: "Inter", sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #162136
+    &__clock
+      margin-right: 10px
+      display: flex
+      align-items: center
+      justify-content: center
+    &__li
+      display: flex
+      flex-direction: column
+      list-style-type: none
+      counter-reset: num
+      margin: 0px 0px 0px 40px
+      padding: 15px 0px 30px 0px  
+      li
+        position: relative
+        padding-bottom: 13px
+        &::before
+          content: counter(num)
+          counter-increment: num
+          display: flex
+          justify-content: center
+          align-items: center
+          position: absolute
+          top: -2px
+          left: -38px
+          width: 28px
+          height: 28px
+          background: #F4F4F4
+          border-radius: 6px
+          color: #fff
+          font-family: "Inter", sans-serif
+          font-weight: 600
+          font-size: 16px
+          line-height: 24px
+          color: #162136
+        &:last-child
+          padding-bottom: 0
+
+    &__text
+      font-family: "Inter", sans-serif
+      font-weight: 400
+      font-size: 16px
+      line-height: 24px
+      color: #162136
+      display: inline-block
+      a
+        margin-left: 5px
+        display: inline
+      span
+        display: inline-block
+      &.word
+        word-break: break-all
+    &__cart
+      height: 145px
+      width: 512px
+      margin-bottom: 12px
+
+
+
+@media(max-width: 1200px)
+  .links
+    width: 100%
+
+
+
+
+@media(max-width: 600px)
+  .links
+    &-block
+      padding: 16px
+      &__image
+        width: 100%
+      &__cart
+        height: 91px
+        width: 300px
+        margin-left: -35px
+      &__li
+        a
+          display: inline
+  .href
+    width: 90%
+    font-size: 18px
+    line-height: 24px
+
+
+
+@media(max-width: 350px)
+  .links
+    &-block
+      &__time span
+        font-size: 12px
+      &__cart
+        width: 245px
+        object-fit: contain

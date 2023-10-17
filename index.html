@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Отзывы</title>
+</head>
+
+<body>
+  <header>
+    <section class="head">
+      <div class="wraper">
+        <div class="head-block">
+          <a href="#" class="head-block__logo">
+            <div>
+              <img src="img/head-logo.svg" alt="">
+            </div>
+          </a>
+          <div class="head-block__phone">
+            <div class="head-block__icon">
+              <img src="img/head-phone.svg" alt="">
+            </div>
+            <a href="tel:+78002002738" class="head-block__number">8 800 200 27 38</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-wrap">
+        <div class="wraper">
+          <div class="hero-block">
+            <div class="hero-block__text">
+              <span class="hero-block__heading">Оставь отзыв -
+                <span class="color"> получи 1600₽</span></span>
+              <div class="hero-block__content">
+                <div class="hero-block__icon">
+                  <img src="img/card-24.svg" alt="">
+                </div>
+                <span class="hero-block__subtitle">На любую банковскую карту</span>
+              </div>
+            </div>
+            <div class="hero-block__image">
+              <img src="img/Group 55.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-block__text mobile">
+        <span class="hero-block__heading">Оставь отзыв -
+          <span class="color"> получи 1600₽</span></span>
+        <div class="hero-block__content">
+          <div class="hero-block__icon">
+            <img src="img/card-24.svg" alt="">
+          </div>
+          <span class="hero-block__subtitle">На любую банковскую карту</span>
+        </div>
+      </div>
+    </section>
+    <section class="instruct">
+      <div class="wrap">
+        <div class="instruct-block">
+          <div class="instuct-block__text">
+            <span class="instruct-block__heading">Как заработать 1600 рублей?</span>
+            <span class="instruct-block__subtitle">Получи 200 рублей на карту любого банка за отзыв на одном из 4
+              сайтов. <br> Удвоим итоговую сумму за отзыв на ВСЕХ 4 сайтах.</span>
+            <div class="instruct-block__btn" onclick="toggleBlock()">
+              <span class="instruct-block__button">Инструкция</span>
+              <div class="instruct-block__icon">
+                <img src="img/expand_more.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="instruct-block__cards">
+            <div class="instruct-block__card">
+              <div class="instruct-block__parent">
+                <div class="instuct-block__absolute">
+                  <span class="instruct-block__number">1</span>
+                </div>
+              </div>
+              <div class="instruct-block__num">
+                <div class="instruct-block__name">
+                  <div class="instruct-block__info">
+                    <span сlass="instruct-block__relocation">Переходите на площадку</span>
+                  </div>
+                </div>
+              </div>
+              <div class="instruct-block__image">
+                <img src="img/Group 11.png" alt="">
+              </div>
+            </div>
+            <div class="instruct-block__card">
+              <div class="instruct-block__parent">
+                <div class="instuct-block__absolute">
+                  <span class="instruct-block__number">2</span>
+                </div>
+              </div>
+              <div class="instruct-block__num">
+                <div class="instruct-block__name">
+                  <div class="instruct-block__info">
+                    <span сlass="instruct-block__relocation"> Оставляете отзывы по определенному формату</span>
+                  </div>
+                </div>
+              </div>
+              <div class="instruct-block__image left">
+                <img src="img/Group 56.png" alt="">
+              </div>
+            </div>
+            <div class="instruct-block__card">
+              <div class="instruct-block__parent">
+                <div class="instuct-block__absolute">
+                  <span class="instruct-block__number">3</span>
+                </div>
+              </div>
+              <div class="instruct-block__num">
+                <div class="instruct-block__name">
+                  <div class="instruct-block__info">
+                    <span сlass="instruct-block__relocation">Ставите 5 звезд</span>
+                    <div class="instruct-block__surname">Ставите 5 звезд и делаете <br> скриншот отзыва</div>
+                  </div>
+                </div>
+              </div>
+              <div class="instruct-block__image top">
+                <img src="img/Group 57.png" alt="">
+              </div>
+            </div>
+            <div class="instruct-block__card">
+              <div class="instruct-block__parent">
+                <div class="instuct-block__absolute">
+                  <span class="instruct-block__number">4</span>
+                </div>
+              </div>
+              <div class="instruct-block__num">
+                <div class="instruct-block__name">
+                  <div class="instruct-block__info">
+                    <p>Отправляете отзыв на проверку</p>
+                  </div>
+                </div>
+              </div>
+              <div class="instruct-block__image right">
+                <img src="img/Group 58.png" alt="">
+              </div>
+            </div>
+            <div class="instruct-block__card big">
+              <div class="instruct-block__parent">
+                <div class="instuct-block__absolute">
+                  <span class="instruct-block__number">5</span>
+                </div>
+              </div>
+              <div class="instruct-block__num">
+                <div class="instruct-block__name">
+                  <div class="instruct-block__info">
+                    <span>Дожидаетесь проверки отзыва</span>
+                    <div class="instruct-block__surname">Для получения полной суммы необходимо оставить отзывы на всех 4
+                      сайтах</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="instruct-block__image top mb">
+                <img src="img/Group 59.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="links">
+      <div class="wrap">
+        <div class="links-block">
+          <div class="links-block__items">
+            <div class="links-block__underline">
+            </div>
+            <div class="links-block__item">
+              <a href="https://yandex.ru/maps/43/kazan/?ll=49.106414%2C55.796129&z=12" target="_blank">
+                <div class="links-block__image">
+                  <div class="links-block__icon">
+                    <img src="img/links-icon1.svg" alt="">
+                  </div>
+                  <span>Перейти на Яндекс.Картах</span>
+                </div>
+              </a>
+              <div class="links-block__switch">
+                <span class="href">Как оставить отзыв о Камкомбанке на Яндекс.Картах</span>
+                <div class="links-block__arrow">
+                  <img src="img/expand_more.svg" alt="">
+                </div>
+              </div>
+              <div class="links-block__content">
+                <div class="links-block__time">
+                  <div class="links-block__clock">
+                    <img src="img/clock-24.svg" alt="">
+                  </div>
+                  <span>Время для прохождения: 3 минуты</span>
+                </div>
+                <ol class="links-block__li">
+                  <li class="links-block__text">Перейти на <a href="https://ya.ru" target="_blank"
+                      class="color">https://ya.ru</a></li>
+                  <li class="links-block__text">В поиске написать Камкомбанк (если вы залогинены в Яндексе, то перейти к
+                    пункту 6)</li>
+                  <li class="links-block__text">Нажать Отзывы</li>
+                  <li class="links-block__text">Нажать Написать отзыв</li>
+                  <li class="links-block__text">Зарегистрироваться или войти под своей учетной записью в Яндексе</li>
+                  <li class="links-block__text">Нажать “Оставить отзыв”</li>
+                  <li class="links-block__text">Поставить 5 звезд</li>
+                  <li class="links-block__text">Написать отзыв и нажать Готово</li>
+                  <li class="links-block__text">Сделать скриншот отзыва</li>
+                </ol>
+              </div>
+            </div>
+            <div class="links-block__underline">
+            </div>
+            <div class="links-block__item">
+              <a href="https://2gis.ru/nabchelny/branches/4081924033223674" target="_blank">
+                <div class="links-block__image">
+                  <div class="links-block__icon">
+                    <img src="img/links-icon2.svg" alt="">
+                  </div>
+                  <span>Перейти 2ГИС</span>
+                </div>
+              </a>
+              <div class="links-block__switch">
+                <span class="href">Как оставить отзыв о Камкомбанке на 2ГИС</span>
+                <div class="links-block__arrow">
+                  <img src="img/expand_more.svg" alt="">
+                </div>
+              </div>
+              <div class="links-block__content">
+                <div class="links-block__time">
+                  <div class="links-block__clock">
+                    <img src="img/clock-24.svg" alt="">
+                  </div>
+                  <span>Время для прохождения: 3 минуты</span>
+                </div>
+                <ol class="links-block__li">
+                  <li class="links-block__text">Перейти на <a href="https://2gis.ru" target="_blank"
+                      class="color">https://2gis.ru</a></li>
+                  <li class="links-block__text">Залогиниться любым удобным способом после нажатия на стрелку под поиском
+                  </li>
+                  <img class="links-block__cart" src="img/unnamed 1.png" alt="">
+                  <li class="links-block__text">В поиске вбить Камкомбанк (появится ближайшее отделение)</li>
+                  <li class="links-block__text">Нажать Отзывы</li>
+                  <li class="links-block__text">Нажать Написать новый отзыв</li>
+                  <li class="links-block__text">Поставить пять звёзд</li>
+                  <li class="links-block__text">Написать отзыв</li>
+                  <li class="links-block__text">Нажать Опубликовать</li>
+                  <li class="links-block__text">Сделать скрин отзыва</li>
+                </ol>
+              </div>
+            </div>
+            <div class="links-block__underline">
+            </div>
+            <div class="links-block__item">
+              <a href="https://www.sravni.ru/" target="_blank">
+                <div class="links-block__image">
+                  <div class="links-block__icon">
+                    <img src="img/links-icon3.svg" alt="">
+                  </div>
+                  <span>Перейти на СРАВНИ</span>
+                </div>
+              </a>
+              <div class="links-block__switch">
+                <span class="href">Как оставить отзыв о Камкомбанке на СРАВНИ</span>
+                <div class="links-block__arrow">
+                  <img src="img/expand_more.svg" alt="">
+                </div>
+              </div>
+              <div class="links-block__content">
+                <div class="links-block__time">
+                  <div class="links-block__clock">
+                    <img src="img/clock-24.svg" alt="">
+                  </div>
+                  <span>Время для прохождения: 5 минут</span>
+                </div>
+                <ol class="links-block__li">
+                  <li class="links-block__text word">Перейти на<a href="https://www.sravni.ru/bank/otzyvy/add/"
+                      target="_blank" class="color">
+                      https://www.sravni.ru/bank/otzyvy/add/</a></li>
+                  <li class="links-block__text">Выбрать Камкомбанк в всплывающем списке</li>
+                  <li class="links-block__text">Нажать “Для физических лиц”</li>
+                  <li class="links-block__text">Выбрать услугу, ваш город, указать, что вы клиент банка</li>
+                  <li class="links-block__text">Поставить 5 звезд</li>
+                  <li class="links-block__text">Написать отзыв(можно один текст для всех сайтов), указать тему
+                    отзыва(оказанная банком услуга), нажать “Продолжить” </li>
+                  <li class="links-block__text">НЕ добавлять секретное сообщение и нажать “Продолжить”</li>
+                  <li class="links-block__text">Указать реальный телефон и почту, любое имя</li>
+                  <li class="links-block__text">Ввести число из СМС, дождаться авторизации</li>
+                </ol>
+              </div>
+            </div>
+            <div class="links-block__underline">
+            </div>
+          </div>
+          <div class="links-block__item">
+            <a href="https://www.banki.ru/" target="_blank">
+              <div class="links-block__image">
+                <div class="links-block__icon">
+                  <img src="img/links-icon4.svg" alt="">
+                </div>
+                <span>Перейти на Банки.ру</span>
+              </div>
+            </a>
+            <div class="links-block__switch">
+              <span class="href">Как оставить отзыв о Камкомбанке на Банки.ру</span>
+              <div class="links-block__arrow">
+                <img src="img/expand_more.svg" alt="">
+              </div>
+            </div>
+            <div class="links-block__content">
+              <div class="links-block__time">
+                <div class="links-block__clock">
+                  <img src="img/clock-24.svg" alt="">
+                </div>
+                <span>Время для прохождения: 6 минут</span>
+              </div>
+              <ol class="links-block__li">
+                <li class="links-block__text word"><span>Перейти на</span><a href="https://www.banki.ru/services/responses/response/add/"
+                    target="_blank" class="color">https://www.banki.ru/services/responses/response/add/</a></li>
+                <li class="links-block__text">Выбрать название банка</li>
+                <li class="links-block__text">Выбрать “Физ лицо”</li>
+                <li class="links-block__text">Если вы не зарегистрированы, введите свой номер телефона и получите код
+                  Выбрать город проживания</li>
+                <li class="links-block__text">Указать канал взаимодействия с банком</li>
+                <li class="links-block__text">Выбрать услугу</li>
+                <li class="links-block__text">Указать заголовок отзыва(оказанную банком услугу)</li>
+                <li class="links-block__text">Написать положительный отзыв</li>
+                <li class="links-block__text">НЕ указывать конфиденциальную информацию и нажать “Продолжить”</li>
+                <li class="links-block__text">Поставить везде положительные реакции и нажать “Продолжить”</li>
+                <li class="links-block__text">Указать реальный номер, войти по СМС и оставить реальную почту(необходимо
+                  подтвердить регистрацию, письмо придет на почту)</li>
+                <li class="links-block__text">Заполнить обязательные данные для регистрации в блоке “Контакты”</li>
+              </ol>
+            </div>
+          </div>
+          <div class="links-block__underline">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wats">
+      <div class="wrap">
+        <div class="wats-block">
+          <div class="wats-block__image">
+            <img src="img/Group 55 (1).png" alt="">
+          </div>
+          <div class="wats-block__text">
+            <span class="wats-block__title">Отправьте скриншот отзыва в WhatsApp и получи <span class="color">200
+                рублей</span> за каждый</span>
+
+            <div class="wats-block__btns">
+              <a href="https://wa.me/8800200663">
+                <div class="wats-block__btn">
+                  <a href="https://wa.me/8800200663" class="wats-block__send">Отправить</a>
+                </div>
+              </a>
+              <a href="https://wa.me/8800200663">
+                <div class="wats-block__content">
+                  <div class="wats-block__icon">
+                    <img src="img/Vector (15).svg" alt="">
+                  </div>
+                  <span>8 800 200 66 38</span>
+                </div>
+              </a>
+            </div>
+            <span class="wats-block__subtitle">В случае возникновения проблем с отзывом вы также можете написать нам в
+              WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
