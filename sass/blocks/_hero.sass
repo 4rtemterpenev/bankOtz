@@ -24,6 +24,8 @@
         padding: 16px
         position: relative
         z-index: 10
+      &.preland
+        width: 60%
     &__content
       display: flex
       flex-direction: row
@@ -44,7 +46,7 @@
       flex-direction: row
       align-items: center
       padding: 10px 16px 10px 16px
-      border-radius: 40px 
+      border-radius: 40px
       background-color: #fff
       width: max-content
       margin-top: 14px
@@ -62,9 +64,33 @@
       justify-content: flex-end
       align-items: flex-end
       z-index: 1
+      &.preland
+        bottom: 60px
+        right: 0
+    &__btns
+      display: flex
+      flex-direction: row
+      margin-top: 30px
+    &__btn
+      padding: 16px 24px 16px 24px
+      border-radius: 8px
+      background-color: #009846
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-right: 15px
+      &.red
+        background-color: #EB5757
+      span
+        font-family: "Inter", sans-serif
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+        color: #fff
+        margin-right: 10px
+
 .wraper
   height: 100%
-
 
 @media(max-width: 1200px)
   .hero
@@ -75,6 +101,8 @@
         right: 0
         img
           width: 100%
+        &.preland
+          right: 0
 
 @media(max-width: 1000px)
   .hero
@@ -86,6 +114,8 @@
         line-height: 36px
       &__image
         width: 55%
+        &.preland
+          bottom: 0
       &__text
         width: 40%
       &__content
@@ -93,8 +123,37 @@
         font-size: 14px
         line-height: 20px
 
+@media(max-width: 900px)
+  .hero
+    &-wrap
+      &.preland
+        height: 550px
+    &-block
+      &__btns
+        display: flex
+        flex-direction: column 
+      &__text
+        &.preland
+          display: none
+        &.opened
+          display: flex
+          width: 100%
+      &__btn
+        width: 210px
+        margin-bottom: 10px
+      &__image
+        &.preland
+          width: 70%
+          right: 100px
+          bottom: 50px
+          img
+            width: 100%
+
 @media(max-width: 700px)
   .hero
+    &-wrap
+      &.preland
+        height: 450px
     &-block
       flex-direction: column
       &__text
@@ -113,26 +172,41 @@
         font-size: 16px
         line-height: 24px
 
-@media(max-width: 500px)
+@media(max-width: 600px)
   .hero
     &-wrap
       height: 300px
+      &.preland
+        height: 500px
     &-block
       &__image
         width: 100%
-@media(max-width: 400px)
+        &.preland
+          width: 100%
+          bottom: 50px
+          right: 0
+          img
+            width: 100%
+      &__btn
+        width: 100%
+        justify-content: center
+        align-items: center
+@media(max-width: 430px)
   .hero
     &-wrap
       height: 243px
+      &.preland
+        height: 380px
     &-block
       &__image
         margin-top: 0
-
 
 @media(max-width: 350px)
   .hero
     &-wrap
       height: 220px
+      &.preland
+        height: 300px
     &-block
       &__heading
         font-size: 32px
