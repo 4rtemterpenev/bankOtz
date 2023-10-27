@@ -15,7 +15,7 @@ function toggleBlock() {
 const accordionItems = document.querySelectorAll('.links-block__item');
 
 accordionItems.forEach((item) => {
-    const header = item.querySelector('.href');
+    const header = item.querySelector('.links-block__switch');
     const content = item.querySelector('.links-block__content');
     const arrow = item.querySelector('.links-block__arrow');
 
