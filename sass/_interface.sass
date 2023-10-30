@@ -1,4 +1,4 @@
-* 
+*
   box-sizing: border-box
   outline: 0 !important
   margin: 0
@@ -21,7 +21,26 @@
 .instruct-block__span
   width: 50%
 
+.error
+  color: red
+  font-family: 'Inter', sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 19px
+  color: #FF2D2D !important
+  margin-top: 3px
+
+.link
+  width: max-content
+  display: inline-block
+
+input.name.error
+  border: 1px solid #FF2D2D !important
 
 @media(max-width: 1200px)
   .wrap
+    width: 100%
+
+@media(max-width: 600px)
+  .link
     width: 100%
