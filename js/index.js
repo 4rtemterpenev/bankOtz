@@ -12,6 +12,33 @@ function toggleBlock() {
     }
 }
 
+let formBtn = document.querySelector('.form-block__btn')
+let modal = document.querySelector('.modal')
+let exit = document.querySelector('.modal-block__head')
+let myForm = document.querySelector('.form-block')
+
+if (formBtn) {
+  formBtn.addEventListener('click', function () {
+    if (!formBtn.classList.contains('disabled')) {
+    modal.classList.add('active')
+    document.body.style.overflow = "hidden"
+    let name = document.getElementById('name').value
+    console.log(name)
+    myForm.reset();
+    }
+  })
+}
+
+if (exit) {
+  exit.addEventListener('click', function () {
+    modal.classList.remove('active')
+    document.body.style.overflow = "visible"
+    location.reload()
+  })
+}
+
+
+
 const accordionItems = document.querySelectorAll('.links-block__item');
 
 accordionItems.forEach((item) => {

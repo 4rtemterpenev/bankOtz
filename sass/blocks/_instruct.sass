@@ -143,11 +143,9 @@
       text-align: center
       align-items: center
 
-
 @media(max-width: 1200px)
   .instruct
     width: 100%
-
 
 @media(max-width: 1000px)
   .instruct
@@ -164,7 +162,6 @@
       &__subtitle
         width: 100%
 
-
 @media(max-width: 600px)
   .instruct
     &-block
@@ -180,6 +177,14 @@
           width: 100%
         &.mb
           margin-left: 0
+          height: 45%
+          object-fit: cover
+          display: flex
+          justify-content: center
+          img
+            width: 80%
+            height: 100%
+
       &__info
         width: 60%
       &__name
@@ -192,7 +197,7 @@
         margin-top: -30px
         &::after
           top: -95px
-          left: -95px 
+          left: -95px
 
 @media(max-width: 400px)
   .instruct
@@ -209,4 +214,15 @@
         margin-top: -40px
         &::after
           top: -100px
-          left: -100px 
+          left: -100px
+      &.mb
+        margin-left: 0
+        height: 45%
+        object-fit: cover
+        display: flex
+        justify-content: center
+        img
+          width: 50%
+          height: 100%
+      &__surname.mobile
+        width: 280px

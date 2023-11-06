@@ -1,0 +1,66 @@
+.modal
+  position: relative
+  z-index: 1000
+  display: none
+  &.active
+    display: block
+  &-block
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0,0 ,0 ,0.7)
+    display: flex
+    justify-content: center
+    align-items: center
+    &__window
+      width: 40%
+      background-color: #fff
+      border-radius: 20px
+      overflow: auto
+      overflow-y: auto
+      padding: 30px
+    &__wrapper
+      width: 90%
+      margin: 0 auto
+      overflow-y: auto
+      position: relative
+    &__head
+      position: absolute
+      top: 0
+      right: 0
+      cursor: pointer
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+    &__image
+      margin-bottom: 10px
+    &__heading
+      margin-bottom: 5px
+      font-family: 'Inter', sans-serif
+      font-weight: 700
+      font-size: 32px
+      line-height: 40px
+      color: #162136
+    &__subtitle
+      font-family: 'Inter', sans-serif
+      font-weight: 400
+      font-size: 24px
+      line-height: 32px
+      color: #162136
+
+
+
+@media(max-width: 600px)
+  .modal
+    &-block
+      &__window
+        width: 100%
+        padding: 32px 16px 32px 16px
+      &__heading
+        text-align: center
+      &__subtitle
+        text-align: center
