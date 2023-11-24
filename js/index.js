@@ -116,3 +116,25 @@ $('.form-block').validate({
         }
     },
 })
+
+    function trackYandexGoal() {
+        ym(95283420, 'reachGoal', 'yandex');
+        return false; 
+    }
+    function trackGisGoal(){
+        ym(95283420,'reachGoal','2gis')
+        return false;  
+    }
+    function trackSravniGoal(){
+        ym(95283420,'reachGoal','sravni')
+        return false;  
+    }
+    function trackBankiGoal(){
+        ym(95283420,'reachGoal','banki')
+        return false;  
+    }
+    function trackWatsGoal(){
+        ym(95283420,'reachGoal','whatsapp')
+        return false;  
+    }
+
