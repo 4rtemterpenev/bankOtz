@@ -137,12 +137,4 @@ $('.form-block').validate({
         ym(95283420,'reachGoal','whatsapp')
         return false;  
     }
-    function trackLikeGoal(){
-        ym(95283420,'reachGoal','like')
-        return false;  
-    }
-    function trackDisGoal(){
-        ym(95283420,'reachGoal','dislike')
-        return false;  
-    }
 
