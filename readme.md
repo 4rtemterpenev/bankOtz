@@ -1,1 +1,1 @@
-https://4rtemterpenev.github.io/bankOtz/
+https://4rtemterpenev.github.io/kamkombankOtz/

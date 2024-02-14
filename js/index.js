@@ -138,3 +138,49 @@ $('.form-block').validate({
         return false;  
     }
 
+
+//Выбор фильтра
+function toggleClass(elem, className) {
+    if (elem.className.indexOf(className) !== -1) {
+      elem.className = elem.className.replace(className, '');
+    }
+    else {
+      elem.className = elem.className.replace(/\s+/g, ' ') + ' ' + className;
+    }
+  
+    return elem;
+  }
+  
+  function toggleMenuDisplay(e) {
+    const dropdown = e.currentTarget.parentNode;
+    const menu = dropdown.querySelector('.menuitems');
+    const icon = dropdown.querySelector('.fa-angle-right');
+  
+    toggleClass(menu, 'hide');
+    toggleClass(icon, 'rotate-90');
+  }
+  
+  function handleOptionSelected(e) {
+    toggleClass(e.target.parentNode, 'hide');
+  
+    const id = e.target.id;
+    const newValue = e.target.textContent + ' ';
+    const titleElem = document.querySelector('.dropdown .titleitems');
+    const icon = document.querySelector('.dropdown .titleitems .fa');
+  
+  
+    titleElem.textContent = newValue;
+    titleElem.appendChild(icon);
+  
+    document.querySelector('.dropdown .titleitems').dispatchEvent(new Event('change'));
+    setTimeout(() => toggleClass(icon, 'rotate-90', 0));
+  }
+  
+  
+  const dropdownTitle = document.querySelector('.dropdown .titleitems');
+  const dropdownOptions = document.querySelectorAll('.dropdown .option');
+  
+  if (dropdownTitle)
+    dropdownTitle.addEventListener('click', toggleMenuDisplay);
+  
+  dropdownOptions.forEach(option => option.addEventListener('click', handleOptionSelected));

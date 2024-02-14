@@ -43,6 +43,115 @@
   width: max-content
   display: inline-block
 
+.items
+  padding-top: 100px
+  &-block
+    margin-bottom: 25px
+    &.hide
+      margin-bottom: 20px
+    &__points
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+    &__point
+      margin-right: 25px
+      display: flex
+      flex-direction: row
+      align-items: center
+      padding: 8px 11px 8px 11px
+      border: 1px solid #fff
+      cursor: pointer
+      margin-bottom: 10px
+      span
+        margin-right: 20px
+        font-family: 'Montserrat', sans-serif
+        font-size: 20px
+        line-height: 27px
+        color: #000
+      &:last-child
+        margin-right: 0
+      &.active
+        border: 1px solid #D6D9E0
+    &__change
+      border: 1px solid #D6D9E0
+      padding: 16px
+      width: 100%
+      border-radius: 8px
+      display: flex
+      flex-direction: column
+      font-family: 'Inter', sans-serif
+      font-weight: 400
+      font-size: 16px
+      line-height: 24px
+      color: #687082
+      &.mater
+        width: 90%
+        margin-top: 20px
+        & .menuitems
+          max-height: 70px
+          overflow-y: auto
+        & .titleitems
+          font-size: 16px
+          line-height: 22px
+        & .option
+          font-size: 16px
+          line-height: 22px
+    &__changeInfo
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .items-block.hide
+        display: none
+.hide
+  display: none
+.dropdown
+  width: 100%
+  position: relative
+  cursor: pointer
+.dropdown .menuitems
+  border: 1px solid #D6D9E0
+  box-shadow: 3px 7px 7px rgba(40, 40, 40, 0.15)
+  padding: 0px 10px 0px 10px
+  position: absolute
+  background-color: #fff
+  max-height: 200px
+  overflow: auto
+  z-index: 1
+  min-width: 100%
+  top: 50px
+  left: 0
+  width: 90%
+.dropdown .titleitems
+  font-family: 'Inter', sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  color: #687082
+  display: flex
+  position: relative
+  justify-content: space-between
+  img
+    margin-left: 5px
+    width: 20px
+.dropdown .option
+  font-family: 'Inter', sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  color: #687082
+  cursor: pointer
+  font-size: 20px
+  margin-bottom: 10px
+  &:first-child
+    margin-top: 15px
+.dropdown li
+  font-family: 'Montserrat', sans-serif
+  font-weight: 500
+  font-size: 24px
+  line-height: 33px
+  color: #000
+.rotate-90
+  transform: rotate(90deg)
 input.name.error
   border: 1px solid #FF2D2D !important
 
